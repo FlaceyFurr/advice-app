@@ -1,12 +1,86 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 
-// Fonts 
+// Fonts
 $mainFonts: "Manrope";
 
-// Colors 
+// Colors
 $lightCyan: hsl(193, 38%, 86%);
 $neonGreen: hsl(150, 100%, 66%);
 
 $grayishBlue: hsl(217, 19%, 38%);
 $darkGrayishBlue: hsl(217, 19%, 24%);
 $darkBlue: hsl(218, 23%, 16%);
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: $darkBlue;
+}
+
+.card {
+  font-family: $mainFonts;
+  width: 500px;
+  height: 300px;
+  background-color: $darkGrayishBlue;
+  color: $lightCyan;
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
+  margin: auto {
+    top: 200px;
+  }
+
+  &__number {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $neonGreen;
+    letter-spacing: 2.25px;
+    width: 150px;
+    margin: auto;
+    padding-top: 30px;
+  }
+
+  &__text {
+    width: 450px;
+    font-size: 28px;
+    margin: auto {
+      top: 15px;
+      bottom: 15px;
+    }
+  }
+
+  &__divider {
+    display: block;
+    margin: auto {
+      top: 30px;
+    }
+  }
+
+  &__button {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    border: none;
+    transform: translate(-50%);
+    background: $neonGreen;
+    border-radius: 100px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 30px 1px $neonGreen;
+    }
+
+    &_dice {
+       position: absolute;
+       top: 20px;
+       left: 20px; 
+    }
+  }
+}
