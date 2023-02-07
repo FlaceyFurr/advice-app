@@ -56,6 +56,12 @@ body {
     margin: auto {
       top: 30px;
     }
+    &_mobile {
+      display: none;
+      margin: auto {
+        top: 40px;
+      }
+    }
   }
 
   &__button {
@@ -81,6 +87,35 @@ body {
        position: absolute;
        top: 20px;
        left: 20px; 
+    }
+  }
+}
+
+
+@media (max-width: 550px) {
+  .card {
+    width: 300px;
+    height: 300px;
+
+    &__number {
+      font-size: 12px;
+    }
+
+    &__text {
+      width: 280px;
+      font-size: 22px;
+    }
+
+    &__divider {
+      display: none;
+
+      &_mobile {
+        display: block;
+      }
+    }
+
+    &__button {
+      top: 270px;
     }
   }
 }
