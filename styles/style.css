@@ -30,15 +30,14 @@ body {
 }
 .card__text {
   width: 450px;
-  font-size: 28px;
+  height: 170px;
+  font-size: 26px;
   margin: auto;
   margin-top: 15px;
-  margin-bottom: 15px;
 }
 .card__divider {
   display: block;
   margin: auto;
-  margin-top: 30px;
 }
 .card__divider_mobile {
   display: none;
@@ -79,6 +78,7 @@ body {
   }
   .card__text {
     width: 280px;
+    height: 135px;
     font-size: 22px;
   }
   .card__divider {
